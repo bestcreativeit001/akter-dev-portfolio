@@ -1,0 +1,1006 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Akter Dev — Full-Stack Web Developer | Fiverr Pro Portfolio</title>
+    <meta name="description" content="Official portfolio of Akter Dev (Best Creative IT), Full-Stack Web Developer on Fiverr. Specializing in modern JavaScript, React, Next.js, Node.js, PHP, AI web apps, and pixel-perfect responsive web design.">
+    <meta name="keywords" content="Akter Dev, Full-Stack Developer, Fiverr Web Developer, Best Creative IT, Frontend Developer, React Developer, JavaScript, PHP, Vercel, Canvas Web App">
+    <meta name="author" content="Akter Dev">
+
+    <!-- Open Graph / Meta Social -->
+    <meta property="og:title" content="Akter Dev — Full-Stack Web Developer | Fiverr Portfolio">
+    <meta property="og:description" content="Modern Full-Stack Web Solutions, High-Performance Web Apps, and Custom Frontend Design for International Fiverr Clients.">
+    <meta property="og:type" content="website">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Outfit:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- FontAwesome 6 Pro Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Background Canvas Mesh Glow & Floating Ambient Orbs -->
+    <div class="ambient-glow glow-1"></div>
+    <div class="ambient-glow glow-2"></div>
+    <div class="ambient-glow glow-3"></div>
+    <canvas id="bgParticleCanvas"></canvas>
+
+    <!-- Top Floating Navbar -->
+    <header class="site-header" id="siteHeader">
+        <div class="nav-container">
+            <a href="#hero" class="brand-logo" id="brandLogo">
+                <span class="logo-icon"><i class="fa-solid fa-code"></i></span>
+                <span class="logo-text">Akter<span class="text-fiverr">Dev</span></span>
+                <span class="badge-status" title="Available for Fiverr Orders"><span class="pulse-dot"></span> Available</span>
+            </a>
+
+            <!-- Desktop Navigation Links -->
+            <nav class="nav-menu" id="navMenu">
+                <a href="#about" class="nav-link">About</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#projects" class="nav-link">Featured Work</a>
+                <a href="#services" class="nav-link">Services</a>
+                <a href="#packages" class="nav-link">Fiverr Gigs</a>
+                <a href="#reviews" class="nav-link">Reviews</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </nav>
+
+            <!-- Navbar Action Button (Fiverr CTA) -->
+            <div class="nav-actions">
+                <a href="https://github.com/bestcreativeit001" target="_blank" rel="noopener noreferrer" class="btn-icon-link" title="View GitHub Repositories">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+                <a href="#contact" class="btn-fiverr-primary" id="btnNavFiverr">
+                    <i class="fa-solid fa-bolt"></i>
+                    <span>Hire on Fiverr</span>
+                </a>
+                <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle Navigation Menu">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-section" id="hero">
+            <div class="hero-container">
+                <div class="hero-content">
+                    <div class="hero-badge">
+                        <span class="fiverr-star-icon"><i class="fa-solid fa-star"></i></span>
+                        <span>Fiverr Trusted Full-Stack Developer</span>
+                        <span class="badge-separator">•</span>
+                        <span class="text-emerald">100% On-Time Delivery</span>
+                    </div>
+
+                    <h1 class="hero-title">
+                        Transforming Ideas into <br>
+                        <span class="gradient-text">High-Performance</span> Web Experiences.
+                    </h1>
+
+                    <p class="hero-description">
+                        Hello! I'm <strong>Akter Dev</strong> (Best Creative IT), a passionate <strong>Full-Stack Web Developer</strong>. 
+                        I build pixel-perfect, scalable web apps, custom full-stack solutions, high-converting frontends, and intelligent in-browser tools tailored for international businesses on Fiverr.
+                    </p>
+
+                    <!-- Trust Stats Bar -->
+                    <div class="hero-stats-row">
+                        <div class="stat-item">
+                            <span class="stat-number">100%</span>
+                            <span class="stat-label">Client Satisfaction</span>
+                        </div>
+                        <div class="stat-divider"></div>
+                        <div class="stat-item">
+                            <span class="stat-number">&lt; 1hr</span>
+                            <span class="stat-label">Average Response Time</span>
+                        </div>
+                        <div class="stat-divider"></div>
+                        <div class="stat-item">
+                            <span class="stat-number">30+</span>
+                            <span class="stat-label">Projects Completed</span>
+                        </div>
+                    </div>
+
+                    <!-- Call To Action Buttons -->
+                    <div class="hero-cta-group">
+                        <a href="#projects" class="btn-hero-primary" id="btnHeroWork">
+                            <span>Explore Portfolio</span>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                        <a href="#packages" class="btn-hero-secondary" id="btnHeroQuote">
+                            <i class="fa-solid fa-file-invoice-dollar"></i>
+                            <span>View Gig Packages</span>
+                        </a>
+                        <a href="#contact" class="btn-hero-fiverr" id="btnHeroFiverr">
+                            <i class="fa-solid fa-handshake"></i>
+                            <span>Order via Fiverr</span>
+                        </a>
+                    </div>
+
+                    <!-- Fiverr Policy Disclaimer Tag -->
+                    <div class="fiverr-policy-pill">
+                        <i class="fa-solid fa-shield-halved"></i>
+                        <span><strong>100% Fiverr Policy Compliant:</strong> All project inquiries, milestone orders, and safe escrow payments are handled strictly through Fiverr.</span>
+                    </div>
+                </div>
+
+                <!-- Hero Visual Graphic / Terminal Card -->
+                <div class="hero-visual">
+                    <div class="terminal-card">
+                        <div class="terminal-header">
+                            <div class="terminal-dots">
+                                <span class="dot dot-red"></span>
+                                <span class="dot dot-yellow"></span>
+                                <span class="dot dot-green"></span>
+                            </div>
+                            <span class="terminal-title">akter_dev_stack.js</span>
+                            <span class="terminal-lang">ES6+</span>
+                        </div>
+                        <div class="terminal-body">
+                            <pre><code><span class="c-keyword">const</span> <span class="c-var">developer</span> = {
+  <span class="c-prop">name</span>: <span class="c-str">'Akter Dev'</span>,
+  <span class="c-prop">brand</span>: <span class="c-str">'Best Creative IT'</span>,
+  <span class="c-prop">platform</span>: <span class="c-str">'Fiverr Professional'</span>,
+  <span class="c-prop">role</span>: <span class="c-str">'Full-Stack Web Developer'</span>,
+  <span class="c-prop">github</span>: <span class="c-str">'bestcreativeit001'</span>,
+  <span class="c-prop">coreSkills</span>: [
+    <span class="c-str">'JavaScript (ES6+)'</span>, <span class="c-str">'React / Next.js'</span>,
+    <span class="c-str">'Node.js / Express'</span>, <span class="c-str">'PHP / MySQL'</span>,
+    <span class="c-str">'Tailored CSS & UI/UX'</span>, <span class="c-str">'Web AI & Canvas'</span>
+  ],
+  <span class="c-prop">guarantees</span>: {
+    <span class="c-prop">pixelPerfect</span>: <span class="c-bool">true</span>,
+    <span class="c-prop">seoOptimized</span>: <span class="c-bool">true</span>,
+    <span class="c-prop">freeRevisions</span>: <span class="c-bool">true</span>,
+    <span class="c-prop">fastDelivery</span>: <span class="c-bool">true</span>
+  },
+  <span class="c-func">readyToBuild</span>: () => <span class="c-str">'Let\'s make your dream site live!'</span>
+};</code></pre>
+                        </div>
+                        <div class="terminal-footer">
+                            <div class="terminal-status">
+                                <span class="status-indicator"></span>
+                                <span>Git: main • 0 errors • 300 DPI Ready</span>
+                            </div>
+                            <button class="btn-copy-code" id="btnCopyCode" title="Copy Dev Object">
+                                <i class="fa-regular fa-copy"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Floating Badges -->
+                    <div class="floating-badge badge-top-right">
+                        <i class="fa-solid fa-wand-magic-sparkles text-cyan"></i>
+                        <div>
+                            <strong>In-Browser AI</strong>
+                            <span>Image & Canvas Magic</span>
+                        </div>
+                    </div>
+                    <div class="floating-badge badge-bottom-left">
+                        <i class="fa-solid fa-gauge-high text-emerald"></i>
+                        <div>
+                            <strong>98+ PageSpeed</strong>
+                            <span>Optimized & Ultra Fast</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="section about-section" id="about">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-tag"><i class="fa-solid fa-user-astronaut"></i> WHO I AM</span>
+                    <h2 class="section-title">Dedicated to Building Reliable, <span class="gradient-text">World-Class</span> Web Apps</h2>
+                    <p class="section-subtitle">A blend of aesthetic precision, clean architecture, and friendly communication.</p>
+                </div>
+
+                <div class="about-grid">
+                    <div class="about-card glass-panel">
+                        <div class="about-icon-box">
+                            <i class="fa-solid fa-laptop-code"></i>
+                        </div>
+                        <h3>Modern Full-Stack Engineering</h3>
+                        <p>
+                            From engaging interactive frontends with seamless animations to robust backends with secure databases, 
+                            I bridge design and engineering to build products that delight users and drive real business conversions.
+                        </p>
+                    </div>
+
+                    <div class="about-card glass-panel">
+                        <div class="about-icon-box">
+                            <i class="fa-solid fa-mobile-screen-button"></i>
+                        </div>
+                        <h3>100% Responsive & Cross-Browser</h3>
+                        <p>
+                            Every single web page is handcrafted to look flawless across all screen sizes—from smartphones and tablets to ultra-wide 4K monitors, fully tested on Chrome, Safari, Edge, and Firefox.
+                        </p>
+                    </div>
+
+                    <div class="about-card glass-panel">
+                        <div class="about-icon-box">
+                            <i class="fa-solid fa-handshake-angle"></i>
+                        </div>
+                        <h3>Fiverr Seller Work Ethic</h3>
+                        <p>
+                            Clear communication, instant milestone updates, post-delivery support, and unconditional dedication to your satisfaction. 
+                            I treat your project as if it were my own business.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills & Tech Stack Section -->
+        <section class="section skills-section" id="skills">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-tag"><i class="fa-solid fa-microchip"></i> TECH STACK</span>
+                    <h2 class="section-title">Technologies &amp; Tools I Master</h2>
+                    <p class="section-subtitle">Modern languages, frameworks, and cloud deployment pipelines.</p>
+                </div>
+
+                <!-- Skill Categories Filter Tabs -->
+                <div class="skills-tabs" id="skillsTabs">
+                    <button class="skill-tab active" data-filter="all">All Tech</button>
+                    <button class="skill-tab" data-filter="frontend">Frontend</button>
+                    <button class="skill-tab" data-filter="backend">Backend &amp; DB</button>
+                    <button class="skill-tab" data-filter="tools">Cloud &amp; DevOps</button>
+                </div>
+
+                <!-- Skills Grid -->
+                <div class="skills-grid" id="skillsGrid">
+                    <!-- Frontend -->
+                    <div class="skill-item glass-card" data-category="frontend">
+                        <div class="skill-icon icon-js"><i class="fa-brands fa-js"></i></div>
+                        <div class="skill-info">
+                            <h4>JavaScript (ES6+)</h4>
+                            <span class="skill-level">Advanced • Interactive Logic</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-item glass-card" data-category="frontend">
+                        <div class="skill-icon icon-react"><i class="fa-brands fa-react"></i></div>
+                        <div class="skill-info">
+                            <h4>React &amp; Next.js</h4>
+                            <span class="skill-level">Components • SSR • Hooks</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-item glass-card" data-category="frontend">
+                        <div class="skill-icon icon-html"><i class="fa-brands fa-html5"></i></div>
+                        <div class="skill-info">
+                            <h4>HTML5 &amp; Semantic Web</h4>
+                            <span class="skill-level">Accessible • SEO Standards</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-item glass-card" data-category="frontend">
+                        <div class="skill-icon icon-css"><i class="fa-brands fa-css3-alt"></i></div>
+                        <div class="skill-info">
+                            <h4>Modern CSS3 &amp; Animations</h4>
+                            <span class="skill-level">Glassmorphism • Flex/Grid</span>
+                        </div>
+                    </div>
+
+                    <!-- Backend & DB -->
+                    <div class="skill-item glass-card" data-category="backend">
+                        <div class="skill-icon icon-node"><i class="fa-brands fa-node-js"></i></div>
+                        <div class="skill-info">
+                            <h4>Node.js &amp; Express</h4>
+                            <span class="skill-level">RESTful APIs • Middleware</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-item glass-card" data-category="backend">
+                        <div class="skill-icon icon-php"><i class="fa-brands fa-php"></i></div>
+                        <div class="skill-info">
+                            <h4>PHP 8+</h4>
+                            <span class="skill-level">Custom Backend • Scripts</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-item glass-card" data-category="backend">
+                        <div class="skill-icon icon-db"><i class="fa-solid fa-database"></i></div>
+                        <div class="skill-info">
+                            <h4>MySQL &amp; PostgreSQL</h4>
+                            <span class="skill-level">Schema Design • Optimization</span>
+                        </div>
+                    </div>
+
+                    <!-- Tools & DevOps -->
+                    <div class="skill-item glass-card" data-category="tools">
+                        <div class="skill-icon icon-git"><i class="fa-brands fa-git-alt"></i></div>
+                        <div class="skill-info">
+                            <h4>Git &amp; GitHub</h4>
+                            <span class="skill-level">Version Control • Repositories</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-item glass-card" data-category="tools">
+                        <div class="skill-icon icon-vercel"><i class="fa-solid fa-triangle-exclamation"></i></div>
+                        <div class="skill-info">
+                            <h4>Vercel &amp; Cloudflare</h4>
+                            <span class="skill-level">Instant CD • SSL • Edge CDN</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-item glass-card" data-category="frontend">
+                        <div class="skill-icon icon-canvas"><i class="fa-solid fa-paintbrush"></i></div>
+                        <div class="skill-info">
+                            <h4>HTML5 2D Canvas Engine</h4>
+                            <span class="skill-level">300 DPI Export • Pre-Press</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-item glass-card" data-category="frontend">
+                        <div class="skill-icon icon-ai"><i class="fa-solid fa-brain"></i></div>
+                        <div class="skill-info">
+                            <h4>Web AI &amp; Transformers</h4>
+                            <span class="skill-level">In-Browser Neural Models</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-item glass-card" data-category="tools">
+                        <div class="skill-icon icon-api"><i class="fa-solid fa-network-wired"></i></div>
+                        <div class="skill-info">
+                            <h4>API Integration</h4>
+                            <span class="skill-level">Stripe • PayPal • Webhooks</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Projects Showcase Section -->
+        <section class="section projects-section" id="projects">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-tag"><i class="fa-solid fa-briefcase"></i> REAL CLIENT WORK</span>
+                    <h2 class="section-title">Featured Projects &amp; Live Demos</h2>
+                    <p class="section-subtitle">Real-world web applications showcasing engineering complexity and design elegance.</p>
+                </div>
+
+                <!-- Project Filters -->
+                <div class="projects-filter" id="projectsFilter">
+                    <button class="filter-btn active" data-filter="all">All Works</button>
+                    <button class="filter-btn" data-filter="fullstack">Full-Stack</button>
+                    <button class="filter-btn" data-filter="canvas-ai">Web AI &amp; Tools</button>
+                    <button class="filter-btn" data-filter="ecommerce">eCommerce &amp; UI</button>
+                </div>
+
+                <!-- Projects Grid -->
+                <div class="projects-grid" id="projectsGrid">
+                    <!-- Project 1: ChronoCanvas Studio (Masterpiece) -->
+                    <article class="project-card glass-panel" data-category="canvas-ai">
+                        <div class="project-preview preview-canvas-studio">
+                            <div class="preview-overlay">
+                                <button class="btn-preview-modal" data-project="chronocanvas">
+                                    <i class="fa-solid fa-expand"></i> View Project Details
+                                </button>
+                            </div>
+                            <div class="project-tag-pill">🔥 Masterpiece</div>
+                        </div>
+                        <div class="project-body">
+                            <div class="project-meta">
+                                <span class="project-cat">Web AI &amp; Graphic Engine</span>
+                                <span class="project-year">2026</span>
+                            </div>
+                            <h3 class="project-title">ChronoCanvas Studio — 300 DPI Pre-Press Engine</h3>
+                            <p class="project-desc">
+                                Commercial wall-clock and canvas print generator featuring in-browser neural AI background removal (RMBG-1.4/ModNet), 6 transparent vector dials, layer ordering, and 300 DPI print export.
+                            </p>
+                            <div class="project-tags">
+                                <span>HTML5 Canvas</span>
+                                <span>Web AI (ONNX)</span>
+                                <span>Vanilla JS</span>
+                                <span>300 DPI Export</span>
+                            </div>
+                            <div class="project-links">
+                                <button class="btn-link-action btn-modal-trigger" data-project="chronocanvas">
+                                    <i class="fa-solid fa-circle-info"></i> Details
+                                </button>
+                                <a href="https://github.com/bestcreativeit001" target="_blank" rel="noopener noreferrer" class="btn-link-action">
+                                    <i class="fa-brands fa-github"></i> Code
+                                </a>
+                                <a href="#contact" class="btn-link-action highlight">
+                                    <i class="fa-solid fa-bolt"></i> Order Similar
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 2: RealEstate Hub & Property Portal -->
+                    <article class="project-card glass-panel" data-category="fullstack">
+                        <div class="project-preview preview-realestate">
+                            <div class="preview-overlay">
+                                <button class="btn-preview-modal" data-project="realestate">
+                                    <i class="fa-solid fa-expand"></i> View Project Details
+                                </button>
+                            </div>
+                            <div class="project-tag-pill">Full-Stack</div>
+                        </div>
+                        <div class="project-body">
+                            <div class="project-meta">
+                                <span class="project-cat">Real Estate &amp; CRM</span>
+                                <span class="project-year">2026</span>
+                            </div>
+                            <h3 class="project-title">MeluxCity — Luxury Property &amp; Real Estate Hub</h3>
+                            <p class="project-desc">
+                                High-end real estate portal with advanced multi-criteria property filtering, interactive floorplans, agent lead routing, and dynamic inquiry management.
+                            </p>
+                            <div class="project-tags">
+                                <span>PHP / Laravel</span>
+                                <span>MySQL</span>
+                                <span>JavaScript</span>
+                                <span>Interactive Map</span>
+                            </div>
+                            <div class="project-links">
+                                <button class="btn-link-action btn-modal-trigger" data-project="realestate">
+                                    <i class="fa-solid fa-circle-info"></i> Details
+                                </button>
+                                <a href="https://github.com/bestcreativeit001" target="_blank" rel="noopener noreferrer" class="btn-link-action">
+                                    <i class="fa-brands fa-github"></i> Code
+                                </a>
+                                <a href="#contact" class="btn-link-action highlight">
+                                    <i class="fa-solid fa-bolt"></i> Order Similar
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 3: Decomart eCommerce Store -->
+                    <article class="project-card glass-panel" data-category="ecommerce">
+                        <div class="project-preview preview-ecommerce">
+                            <div class="preview-overlay">
+                                <button class="btn-preview-modal" data-project="decomart">
+                                    <i class="fa-solid fa-expand"></i> View Project Details
+                                </button>
+                            </div>
+                            <div class="project-tag-pill">eCommerce</div>
+                        </div>
+                        <div class="project-body">
+                            <div class="project-meta">
+                                <span class="project-cat">Online Store &amp; Checkout</span>
+                                <span class="project-year">2026</span>
+                            </div>
+                            <h3 class="project-title">Decomart — High-Conversion eCommerce Platform</h3>
+                            <p class="project-desc">
+                                Modern shopping experience with instant cart drawer, size/color variant matrix, dynamic invoice builder, order tracking, and mobile-optimized one-click checkout.
+                            </p>
+                            <div class="project-tags">
+                                <span>Responsive UI</span>
+                                <span>Live Cart</span>
+                                <span>REST APIs</span>
+                                <span>Payment Ready</span>
+                            </div>
+                            <div class="project-links">
+                                <button class="btn-link-action btn-modal-trigger" data-project="decomart">
+                                    <i class="fa-solid fa-circle-info"></i> Details
+                                </button>
+                                <a href="https://github.com/bestcreativeit001" target="_blank" rel="noopener noreferrer" class="btn-link-action">
+                                    <i class="fa-brands fa-github"></i> Code
+                                </a>
+                                <a href="#contact" class="btn-link-action highlight">
+                                    <i class="fa-solid fa-bolt"></i> Order Similar
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 4: Asmaul Husna Web App -->
+                    <article class="project-card glass-panel" data-category="canvas-ai">
+                        <div class="project-preview preview-asmaul">
+                            <div class="preview-overlay">
+                                <button class="btn-preview-modal" data-project="asmaul">
+                                    <i class="fa-solid fa-expand"></i> View Project Details
+                                </button>
+                            </div>
+                            <div class="project-tag-pill">Web App</div>
+                        </div>
+                        <div class="project-body">
+                            <div class="project-meta">
+                                <span class="project-cat">Multilingual Audio Web App</span>
+                                <span class="project-year">2026</span>
+                            </div>
+                            <h3 class="project-title">Asmaul Husna — Interactive Spiritual Explorer</h3>
+                            <p class="project-desc">
+                                Elegant multilingual platform featuring 99 Divine Names with synced audio pronunciation, Arabic typography, search indexing, and smooth dark/light ambiance.
+                            </p>
+                            <div class="project-tags">
+                                <span>Web Audio API</span>
+                                <span>Typography</span>
+                                <span>Local Storage</span>
+                                <span>Progressive Web</span>
+                            </div>
+                            <div class="project-links">
+                                <button class="btn-link-action btn-modal-trigger" data-project="asmaul">
+                                    <i class="fa-solid fa-circle-info"></i> Details
+                                </button>
+                                <a href="https://github.com/bestcreativeit001" target="_blank" rel="noopener noreferrer" class="btn-link-action">
+                                    <i class="fa-brands fa-github"></i> Code
+                                </a>
+                                <a href="#contact" class="btn-link-action highlight">
+                                    <i class="fa-solid fa-bolt"></i> Order Similar
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section class="section services-section" id="services">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-tag"><i class="fa-solid fa-gears"></i> WHAT I DELIVER</span>
+                    <h2 class="section-title">Tailored Services for Every Business Need</h2>
+                    <p class="section-subtitle">High-quality development standards from scratch or revamp existing codebases.</p>
+                </div>
+
+                <div class="services-grid">
+                    <div class="service-box glass-card">
+                        <div class="service-icon"><i class="fa-solid fa-globe"></i></div>
+                        <h3>Custom Website Development</h3>
+                        <p>Complete custom websites built with clean, modern code. Tailored to your specific brand identity, goals, and audience with zero bloat.</p>
+                        <ul class="service-list">
+                            <li><i class="fa-solid fa-check text-fiverr"></i> Semantic HTML5 &amp; Modern JS</li>
+                            <li><i class="fa-solid fa-check text-fiverr"></i> Ultra-Fast Load Speeds (< 1.5s)</li>
+                            <li><i class="fa-solid fa-check text-fiverr"></i> Cross-Device Responsiveness</li>
+                        </ul>
+                    </div>
+
+                    <div class="service-box glass-card">
+                        <div class="service-icon"><i class="fa-solid fa-layer-group"></i></div>
+                        <h3>Full-Stack &amp; Web Applications</h3>
+                        <p>Dynamic web applications with interactive state management, custom database schemas, API integrations, and secure admin control panels.</p>
+                        <ul class="service-list">
+                            <li><i class="fa-solid fa-check text-fiverr"></i> React / Next.js / Node / PHP</li>
+                            <li><i class="fa-solid fa-check text-fiverr"></i> MySQL / PostgreSQL Storage</li>
+                            <li><i class="fa-solid fa-check text-fiverr"></i> RESTful API Development</li>
+                        </ul>
+                    </div>
+
+                    <div class="service-box glass-card">
+                        <div class="service-icon"><i class="fa-solid fa-cart-shopping"></i></div>
+                        <h3>eCommerce &amp; High-Converting Landers</h3>
+                        <p>Sales-focused landing pages and online store interfaces engineered to maximize conversion rates, checkout velocity, and customer retention.</p>
+                        <ul class="service-list">
+                            <li><i class="fa-solid fa-check text-fiverr"></i> Instant Cart &amp; Variant Matrix</li>
+                            <li><i class="fa-solid fa-check text-fiverr"></i> Checkout Funnel Optimization</li>
+                            <li><i class="fa-solid fa-check text-fiverr"></i> Payment Gateway Hookup</li>
+                        </ul>
+                    </div>
+
+                    <div class="service-box glass-card">
+                        <div class="service-icon"><i class="fa-solid fa-bug-slash"></i></div>
+                        <h3>Bug Fixing &amp; Speed Optimization</h3>
+                        <p>Troubleshoot broken layouts, fix JavaScript logic errors, resolve CSS responsive bugs, and boost Google PageSpeed / Core Web Vitals to 90+.</p>
+                        <ul class="service-list">
+                            <li><i class="fa-solid fa-check text-fiverr"></i> Instant Troubleshooting</li>
+                            <li><i class="fa-solid fa-check text-fiverr"></i> Asset Minification &amp; Caching</li>
+                            <li><i class="fa-solid fa-check text-fiverr"></i> Clean Refactored Code</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Fiverr Gig Packages Section -->
+        <section class="section packages-section" id="packages">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-tag"><i class="fa-solid fa-tags"></i> TRANSPARENT PRICING</span>
+                    <h2 class="section-title">Fiverr Standard Gig Packages</h2>
+                    <p class="section-subtitle">Choose a package that fits your project scope, or request a custom Fiverr offer.</p>
+                </div>
+
+                <div class="pricing-grid">
+                    <!-- Basic Tier -->
+                    <div class="pricing-card glass-panel">
+                        <div class="pricing-badge">STARTER</div>
+                        <h3 class="tier-name">Basic Package</h3>
+                        <p class="tier-desc">Perfect for single landing pages, bug fixes, or minor feature enhancements.</p>
+                        <div class="tier-price">
+                            <span class="price-val">$45</span>
+                            <span class="price-unit">/ starting</span>
+                        </div>
+                        <div class="delivery-time">
+                            <i class="fa-regular fa-clock"></i> 2 Days Delivery • 3 Revisions
+                        </div>
+                        <ul class="tier-features">
+                            <li><i class="fa-solid fa-check text-fiverr"></i> 1 Responsive Page / Component</li>
+                            <li><i class="fa-solid fa-check text-fiverr"></i> Clean HTML5/CSS3/JavaScript</li>
+                            <li><i class="fa-solid fa-check text-fiverr"></i> Mobile-Friendly Layout</li>
+                            <li><i class="fa-solid fa-check text-fiverr"></i> Free Vercel/GitHub Deployment</li>
+                            <li class="disabled"><i class="fa-solid fa-xmark"></i> Custom Backend / Database</li>
+                        </ul>
+                        <a href="#contact" class="btn-package-action" data-tier="Basic ($45)">
+                            <i class="fa-solid fa-cart-plus"></i> Order Basic on Fiverr
+                        </a>
+                    </div>
+
+                    <!-- Standard Tier (Popular) -->
+                    <div class="pricing-card glass-panel popular">
+                        <div class="popular-ribbon"><i class="fa-solid fa-fire"></i> MOST POPULAR</div>
+                        <div class="pricing-badge">STANDARD</div>
+                        <h3 class="tier-name">Standard Package</h3>
+                        <p class="tier-desc">Ideal for multi-page business websites, interactive web tools, or portfolios.</p>
+                        <div class="tier-price">
+                            <span class="price-val">$120</span>
+                            <span class="price-unit">/ starting</span>
+                        </div>
+                        <div class="delivery-time">
+                            <i class="fa-regular fa-clock"></i> 4 Days Delivery • Unlimited Revisions
+                        </div>
+                        <ul class="tier-features">
+                            <li><i class="fa-solid fa-check text-fiverr"></i> Up to 5 Responsive Pages</li>
+                            <li><i class="fa-solid fa-check text-fiverr"></i> Interactive Animations &amp; UI</li>
+                            <li><i class="fa-solid fa-check text-fiverr"></i> Contact Forms &amp; API Setup</li>
+                            <li><i class="fa-solid fa-check text-fiverr"></i> SEO &amp; Speed Optimized</li>
+                            <li><i class="fa-solid fa-check text-fiverr"></i> Full Source Code on GitHub</li>
+                        </ul>
+                        <a href="#contact" class="btn-package-action btn-popular" data-tier="Standard ($120)">
+                            <i class="fa-solid fa-bolt"></i> Order Standard on Fiverr
+                        </a>
+                    </div>
+
+                    <!-- Premium Tier -->
+                    <div class="pricing-card glass-panel">
+                        <div class="pricing-badge">ENTERPRISE</div>
+                        <h3 class="tier-name">Premium Full-Stack</h3>
+                        <p class="tier-desc">Complete full-stack web application with database, auth, and custom features.</p>
+                        <div class="tier-price">
+                            <span class="price-val">$250</span>
+                            <span class="price-unit">/ starting</span>
+                        </div>
+                        <div class="delivery-time">
+                            <i class="fa-regular fa-clock"></i> 7 Days Delivery • VIP Support
+                        </div>
+                        <ul class="tier-features">
+                            <li><i class="fa-solid fa-check text-fiverr"></i> Complete Custom Web Application</li>
+                            <li><i class="fa-solid fa-check text-fiverr"></i> React/Next.js or PHP/Node Backend</li>
+                            <li><i class="fa-solid fa-check text-fiverr"></i> Database &amp; Authentication</li>
+                            <li><i class="fa-solid fa-check text-fiverr"></i> Payment / Third-Party Integration</li>
+                            <li><i class="fa-solid fa-check text-fiverr"></i> 30 Days Post-Delivery Support</li>
+                        </ul>
+                        <a href="#contact" class="btn-package-action" data-tier="Premium ($250)">
+                            <i class="fa-solid fa-crown"></i> Order Premium on Fiverr
+                        </a>
+                    </div>
+                </div>
+
+                <div class="custom-offer-banner glass-panel">
+                    <div class="banner-text">
+                        <h3>Need a custom project tailored to your exact budget?</h3>
+                        <p>Every project is unique. Message me directly on Fiverr and I'll send you a custom tailored proposal within 1 hour!</p>
+                    </div>
+                    <a href="#contact" class="btn-fiverr-outline">
+                        <i class="fa-solid fa-comments"></i> Request Custom Quote
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Fiverr Client Reviews Section -->
+        <section class="section reviews-section" id="reviews">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-tag"><i class="fa-solid fa-star text-gold"></i> TESTIMONIALS</span>
+                    <h2 class="section-title">What Fiverr Clients Say</h2>
+                    <p class="section-subtitle">Real experiences and verified buyer feedback.</p>
+                </div>
+
+                <div class="reviews-grid">
+                    <div class="review-card glass-panel">
+                        <div class="review-stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <span class="star-rating">5.0</span>
+                        </div>
+                        <p class="review-text">
+                            "Akter is an absolute genius developer! He built our canvas tool with in-browser AI features that competitors charged thousands for. Delivered 2 days ahead of schedule. Will hire again!"
+                        </p>
+                        <div class="reviewer-meta">
+                            <div class="reviewer-avatar">🇺🇸</div>
+                            <div>
+                                <h4 class="reviewer-name">Marcus Vance</h4>
+                                <span class="reviewer-loc">United States • Verified Fiverr Buyer</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="review-card glass-panel">
+                        <div class="review-stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <span class="star-rating">5.0</span>
+                        </div>
+                        <p class="review-text">
+                            "Super responsive communication and top-notch code quality! The responsive design looks gorgeous on every iPhone and desktop. Plus, he hosted it on Vercel seamlessly."
+                        </p>
+                        <div class="reviewer-meta">
+                            <div class="reviewer-avatar">🇬🇧</div>
+                            <div>
+                                <h4 class="reviewer-name">Elena Rostova</h4>
+                                <span class="reviewer-loc">United Kingdom • E-Commerce Owner</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="review-card glass-panel">
+                        <div class="review-stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <span class="star-rating">5.0</span>
+                        </div>
+                        <p class="review-text">
+                            "Fixed a critical bug on our real estate website that other developers gave up on. Akter solved it in less than 3 hours. Outstanding professional on Fiverr!"
+                        </p>
+                        <div class="reviewer-meta">
+                            <div class="reviewer-avatar">🇨🇦</div>
+                            <div>
+                                <h4 class="reviewer-name">David Tremblay</h4>
+                                <span class="reviewer-loc">Canada • Startup Founder</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Fiverr FAQ Section -->
+        <section class="section faq-section" id="faq">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-tag"><i class="fa-solid fa-circle-question"></i> FREQUENTLY ASKED</span>
+                    <h2 class="section-title">Answers to Common Questions</h2>
+                    <p class="section-subtitle">Everything you need to know about working together on Fiverr.</p>
+                </div>
+
+                <div class="faq-accordion" id="faqAccordion">
+                    <div class="faq-item glass-panel active">
+                        <button class="faq-question">
+                            <span>How do we start working together on Fiverr?</span>
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Simply send me a message through Fiverr describing your project requirements. I will review your details, provide technical recommendations, and send a tailored Custom Offer right to your Fiverr inbox. Once accepted, work begins immediately!</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item glass-panel">
+                        <button class="faq-question">
+                            <span>Will I get the full source code and GitHub repository?</span>
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Yes, 100%! Upon project completion, you receive complete ownership of all clean, well-commented source code files, along with deployment to your GitHub or Vercel account at no extra charge.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item glass-panel">
+                        <button class="faq-question">
+                            <span>What happens if I need revisions or changes?</span>
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Your satisfaction is my top priority. Every package includes revisions to make sure the final website aligns exactly with your vision and expectations before you accept the order.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item glass-panel">
+                        <button class="faq-question">
+                            <span>Why is all communication and payment handled on Fiverr?</span>
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Fiverr provides a safe escrow payment system that protects buyers and sellers alike. Your payment is held safely by Fiverr until you review and approve the completed work. In strict compliance with Fiverr's Terms of Service, all communications and payments remain safely inside Fiverr.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Fiverr Inquiry & Contact Section -->
+        <section class="section contact-section" id="contact">
+            <div class="container">
+                <div class="contact-wrapper glass-panel">
+                    <div class="contact-info">
+                        <span class="section-tag"><i class="fa-solid fa-handshake"></i> LET'S COLLABORATE</span>
+                        <h2 class="contact-title">Ready to launch your project on <span class="text-fiverr">Fiverr</span>?</h2>
+                        <p class="contact-desc">
+                            Fill out the brief project scope generator on the right to compose a ready-to-send brief, or reach out directly on Fiverr. I reply in under 1 hour!
+                        </p>
+
+                        <div class="contact-perks">
+                            <div class="perk-item">
+                                <i class="fa-solid fa-shield-check text-fiverr"></i>
+                                <span>Fiverr Escrow Protected Orders</span>
+                            </div>
+                            <div class="perk-item">
+                                <i class="fa-solid fa-clock-rotate-left text-fiverr"></i>
+                                <span>Fast 24-Hour Milestones Available</span>
+                            </div>
+                            <div class="perk-item">
+                                <i class="fa-solid fa-code-branch text-fiverr"></i>
+                                <span>Free GitHub &amp; Vercel Deployment</span>
+                            </div>
+                        </div>
+
+                        <!-- Fiverr Badge Box -->
+                        <div class="fiverr-profile-card">
+                            <div class="fiverr-badge-logo">fi</div>
+                            <div class="fiverr-profile-info">
+                                <h4>Akter Dev</h4>
+                                <span>Full-Stack Web Developer • Best Creative IT</span>
+                                <div class="fiverr-stars-row">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <strong>5.0 (Fiverr Pro Quality)</strong>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Interactive Fiverr Message Generator Form -->
+                    <div class="contact-form-container">
+                        <div class="form-header">
+                            <h3><i class="fa-solid fa-wand-magic-sparkles text-cyan"></i> Project Scope Generator</h3>
+                            <p>Generate a professional brief to copy &amp; paste into Fiverr inbox:</p>
+                        </div>
+
+                        <form id="fiverrScopeForm" class="scope-form">
+                            <div class="form-group">
+                                <label for="projectType">What are you looking to build?</label>
+                                <select id="projectType" class="form-select">
+                                    <option value="Custom Full-Stack Web Application" selected>Custom Full-Stack Web Application</option>
+                                    <option value="Modern Business Landing Page">Modern Business Landing Page</option>
+                                    <option value="eCommerce Store / Checkout Funnel">eCommerce Store / Checkout Funnel</option>
+                                    <option value="Interactive Web AI / Canvas Tool">Interactive Web AI / Canvas Tool</option>
+                                    <option value="Bug Fixing & PageSpeed Optimization">Bug Fixing &amp; PageSpeed Optimization</option>
+                                    <option value="Figma / PSD to Pixel-Perfect Code">Figma / PSD to Pixel-Perfect Code</option>
+                                </select>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="budgetRange">Estimated Budget:</label>
+                                    <select id="budgetRange" class="form-select">
+                                        <option value="$45 - $100 (Starter)">$45 - $100 (Starter)</option>
+                                        <option value="$120 - $250 (Standard)" selected>$120 - $250 (Standard)</option>
+                                        <option value="$250 - $500 (Advanced)">$250 - $500 (Advanced)</option>
+                                        <option value="$500+ (Custom Enterprise)">$500+ (Custom Enterprise)</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="timelineTarget">Preferred Delivery:</label>
+                                    <select id="timelineTarget" class="form-select">
+                                        <option value="Standard (3 - 5 Days)" selected>Standard (3 - 5 Days)</option>
+                                        <option value="Express (24 - 48 Hours)">Express (24 - 48 Hours)</option>
+                                        <option value="Flexible (1 - 2 Weeks)">Flexible (1 - 2 Weeks)</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="customNotes">Brief description or specific features:</label>
+                                <textarea id="customNotes" rows="3" class="form-textarea" placeholder="E.g., I need a modern dark-mode website with smooth animations, mobile-friendly layout, and contact form..."></textarea>
+                            </div>
+
+                            <!-- Generated Message Output Preview -->
+                            <div class="generated-preview-box">
+                                <div class="preview-header">
+                                    <span>Generated Fiverr Message:</span>
+                                    <button type="button" id="btnCopyFiverrMsg" class="btn-copy-preview">
+                                        <i class="fa-regular fa-copy"></i> Copy Message
+                                    </button>
+                                </div>
+                                <div class="preview-text" id="previewText">
+                                    Hi Akter! I saw your portfolio and would like to order a Custom Full-Stack Web Application. Budget: $120 - $250 (Standard), Timeline: Standard (3 - 5 Days). Please let me know your availability for a custom offer!
+                                </div>
+                            </div>
+
+                            <!-- Direct Fiverr CTA Button -->
+                            <div class="form-actions">
+                                <a href="https://www.fiverr.com" target="_blank" rel="noopener noreferrer" class="btn-submit-fiverr" id="btnGoToFiverr">
+                                    <i class="fa-solid fa-paper-plane"></i>
+                                    <span>Send Inquiry on Fiverr</span>
+                                </a>
+                            </div>
+
+                            <div class="form-disclaimer">
+                                <i class="fa-solid fa-lock"></i>
+                                <span>Safe, secure &amp; 100% compliant with Fiverr Terms of Service.</span>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container footer-content">
+            <div class="footer-brand">
+                <a href="#hero" class="brand-logo">
+                    <span class="logo-icon"><i class="fa-solid fa-code"></i></span>
+                    <span class="logo-text">Akter<span class="text-fiverr">Dev</span></span>
+                </a>
+                <p>Full-Stack Web Developer &amp; Creative Problem Solver. Available for freelance opportunities exclusively via Fiverr.</p>
+            </div>
+
+            <div class="footer-links">
+                <h4>Quick Navigation</h4>
+                <ul>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#skills">Tech Stack</a></li>
+                    <li><a href="#projects">Portfolio Projects</a></li>
+                    <li><a href="#packages">Fiverr Packages</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-links">
+                <h4>Fiverr Standards</h4>
+                <ul>
+                    <li><a href="#faq">Fiverr Policy Notice</a></li>
+                    <li><a href="https://github.com/bestcreativeit001" target="_blank" rel="noopener noreferrer">GitHub Profile</a></li>
+                    <li><a href="#contact">Custom Quote Request</a></li>
+                    <li><a href="https://www.fiverr.com" target="_blank" rel="noopener noreferrer">Fiverr Profile</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container bottom-row">
+                <p>© 2026 Akter Dev (Best Creative IT). All rights reserved.</p>
+                <div class="fiverr-trust-note">
+                    <i class="fa-solid fa-shield-halved text-fiverr"></i>
+                    <span>All services adhere strictly to Fiverr's Terms of Service.</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Interactive Project Details Modal -->
+    <div class="project-modal" id="projectModal" aria-hidden="true">
+        <div class="modal-backdrop" id="modalBackdrop"></div>
+        <div class="modal-dialog glass-panel">
+            <button class="modal-close" id="modalClose" aria-label="Close Modal">&times;</button>
+            <div class="modal-content" id="modalContent">
+                <!-- Dynamically populated by app.js -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Toast Notification for Copy Actions -->
+    <div class="toast-notification" id="toastNotification">
+        <i class="fa-solid fa-check-circle"></i>
+        <span id="toastMessage">Copied to clipboard!</span>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="app.js"></script>
+</body>
+</html>
